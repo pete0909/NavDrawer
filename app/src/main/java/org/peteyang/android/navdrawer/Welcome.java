@@ -33,6 +33,7 @@ public class Welcome extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        this.setTitle("GapChat");
         new AttemptWelcome().execute();
     }
 
