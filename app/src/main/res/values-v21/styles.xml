@@ -2,13 +2,14 @@
 <resources>
      
         <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" >
-            
-        <item name="colorPrimary">@color/myPrimaryColor</item>
-        <item name="colorPrimaryDark">#303F9F</item>
-        <item name="android:navigationBarColor">#303F9F</item>
+            <item name="colorPrimary">@color/myPrimaryColor</item>
+    <item name="colorPrimaryDark">#303F9F</item>
+    <item name="android:navigationBarColor">#303F9F</item>
     <item name="android:statusBarColor">#303F9F</item>
-
         </style>
+
+    <!--
+    <item name="android:windowTranslucentStatus">true</item>-->
 
     <!--<item name="android:statusBarColor">#303F9F</item>-->
 

@@ -49,6 +49,7 @@ public class MainActivity extends ActionBarActivity {
         Intent k = getIntent();
         String main_username = k.getStringExtra("username");
         NAME = main_username;
+        EMAIL = main_username+"@gmail.com";
 
 
         super.onCreate(savedInstanceState);
