@@ -1,0 +1,89 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="com.example.papound.matdes_nav.Login"
+
+
+    >
+
+
+    <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView"
+        android:hint="Username"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_marginTop="35dp"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:hint="Password"
+        android:layout_below="@+id/username"
+        android:layout_alignStart="@+id/username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter your Username and Password"
+        android:id="@+id/textView"
+        android:layout_marginTop="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="#448AFF"
+        android:text="Log In"
+        android:textSize="14dp"
+        android:id="@+id/login"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="New to GapChat ? Sign Up"
+        android:id="@+id/register"
+        android:textSize="10dp"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/primary_text_light"
+        android:text="Welcome to GapChat !"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>
+
