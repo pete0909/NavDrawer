@@ -8,6 +8,7 @@
     android:orientation="horizontal"
     android:clickable="true"
     android:background="?attr/selectableItemBackground"
+
     >
     <!--android:background="#ffffff"-->
 
