@@ -1,5 +1,6 @@
 package org.peteyang.android.navdrawer;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -28,6 +29,8 @@ public class Welcome extends ActionBarActivity {
     private static final String CHECK_LOGIN_URL = "http://128.199.117.135/webservice/checklogin.php";
 
     JSONParser jsonParser = new JSONParser();
+
+    private ProgressDialog pDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +79,7 @@ public class Welcome extends ActionBarActivity {
 
         @Override
         protected String doInBackground(String... args) {
+
             // TODO Auto-generated method stub
             // Check for success tag
 
@@ -138,6 +142,8 @@ public class Welcome extends ActionBarActivity {
 
                     startActivity(i);
 
+                    return check_login_json.getString("reply");
+
 
 
                 } else {
@@ -146,10 +152,11 @@ public class Welcome extends ActionBarActivity {
                     finish();
                     //i.putExtra("username", loggedin_username);
                     startActivity(i);
+                    return check_login_json.getString("reply");
 
                 }
 
-                return null;
+                //return null;
 
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -162,9 +169,10 @@ public class Welcome extends ActionBarActivity {
 
 
             // dismiss the dialog once product deleted
-//            pDialog.dismiss();
+            //Log.d(file_url,"");
+            //pDialog.dismiss();
 //            if (file_url != null) {
-//                Toast.makeText(Login.this, file_url, Toast.LENGTH_LONG).show();
+//                Toast.makeText(Welcome.this, file_url, Toast.LENGTH_LONG).show();
 //            }
 
         }

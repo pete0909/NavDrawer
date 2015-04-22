@@ -21,10 +21,42 @@
             layout="@layout/tool_bar">
         </include>
 
-        <!--<TextView
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/screen1"
+            android:background="#ff88ff4c"
+            android:visibility="invisible">
+
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World" />-->
+            android:text="Hello World 11" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/screen2"
+            android:background="#ffff8c4e">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World 22" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
